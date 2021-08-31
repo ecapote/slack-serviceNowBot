@@ -1,0 +1,11 @@
+version: '3'
+services:
+  slackbot:
+    build: .
+    image: slackbot_image
+    ports:
+      - "5500:5500"
+    networks:
+      - slackbotnet
+networks:
+  slackbotnet:
